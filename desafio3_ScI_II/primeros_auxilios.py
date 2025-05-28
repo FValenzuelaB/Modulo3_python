@@ -1,5 +1,5 @@
 
-print("Hola, esta es una gúa basica para hacer primeros Auxilios")
+print("Hola, esta es una guía basica para hacer primeros Auxilios")
 
 while True:
     print("La persona responde a estimulos?")
