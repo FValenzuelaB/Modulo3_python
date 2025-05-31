@@ -17,9 +17,9 @@ def filtro(precios: dict[str, int], umbral: int):
         criterio = "mayor"
 
     if criterio == "mayor":
-        return [k for k, v in precios.items() if v > umbral]
+        return f"Los productos con precios mayores al umbral son: {[k for k, v in precios.items() if v > umbral]}"
     elif criterio == "menor":
-        return [k for k, v in precios.items() if v < umbral]
+        return f"Los productos con precios menores al umbral son: {[k for k, v in precios.items() if v < umbral]}"
     else:
         raise ValueError(f"\nEl criterio ingresado es incorrecto: '{sys.argv[2]}'. Usa 'mayor' o 'menor'")
 
