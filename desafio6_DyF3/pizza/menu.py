@@ -1,7 +1,7 @@
 
 
 
-def menu():
+def menu()->None:
     print("""
           Menú Principal
           1. Seleccionar tipo de masa.

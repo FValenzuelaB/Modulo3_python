@@ -1,6 +1,6 @@
 
 
-def masa():
+def masa(pizza:dict)->dict:
     masas=["Masa Tradicional","Masa delgada","Masa con Bordes de Queso"]
 
     i=int(input("""
@@ -10,7 +10,8 @@ def masa():
         3. Masa con Bordes de queso.
         \n"""))
     if i in range(1,4):
-        return masas[i-1]
+        pizza["masa"]=masas[i-1]
+        return pizza
     else:
         return("Ingrese una opcíon valida")
 

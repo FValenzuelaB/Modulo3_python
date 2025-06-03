@@ -6,12 +6,14 @@ from pizza.ingredientes import fun_ingredientes
 
 def main():
     ingredientes=[]
-    while True:
-        pizza={
-        "masa":"a",
-        "salsa":"b",
+    pizza={
+        "masa":"",
+        "salsa":"",
         "ingredientes":ingredientes
-    }
+        }
+   
+    while True:
+        
         menu()
         opcion=input("Seleccione una opción: ")
         if opcion in ["1","2","3","4","5"]:
@@ -20,11 +22,11 @@ def main():
             raise ValueError("Ingrese una opción valida (1,2,3,4 o 5), vuelva a empezar su pedido")
 
         if opcion=="1":
-            pizza["masa"]=str(masa())
+            masa(pizza)
             print(f"El tipo de masa elegida es: {pizza["masa"]}")
         
         elif opcion=="2":
-            pizza["salsa"]=str(salsa())
+            salsa(pizza)
             print(f"El tipo de salsa elegida es: {pizza["salsa"]}")
 
         elif opcion=="3":

@@ -1,7 +1,7 @@
 
 
 
-def salsa():
+def salsa(pizza:dict)->dict:
     salsas=["Salsa de Tomate","Salsa Alfredo","Salsa Barbeque","Salsa Pesto"]
 
     i=int(input("""
@@ -12,7 +12,8 @@ def salsa():
         4. Salsa Pesto.
         \n"""))
     if i in range(1,5):
-        return salsas[i-1]
+        pizza["salsa"]=salsas[i-1]
+        return pizza
     else:
         return("Ingrese una opcíon valida")
 
